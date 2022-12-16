@@ -6,15 +6,15 @@ import pyodbc
 import haversine as hs
 import requests
 
-server = 'rushikeshbhagat.database.windows.net'
-database = 'profile'
-username = 'rushi'
-password = 'April@5420'   
+server = 'Add database server name'
+database = 'Add database name'
+username = 'Add database username'
+password = 'Add user password'   
 driver= '{ODBC Driver 17 for SQL Server}'
 
 connstr = 'DRIVER='+driver+';SERVER=tcp:'+server+';PORT=1433;DATABASE='+database+';UID='+username+';PWD='+ password
 
-mapQuest_key = 'CS9d57qqkLMHvfbnuDoAYrmGsNIAnGAp'
+mapQuest_key = 'Add your MapQuest API key'
 mapQuest_url = 'http://open.mapquestapi.com/geocoding/v1/address?key='
 
 app = Flask(__name__)
